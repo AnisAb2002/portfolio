@@ -346,3 +346,170 @@ section{
     transform: scale(1.2) translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+.contact{
+    background-color: var(--bg-color);
+
+}
+.contact h2{
+    font-size: 4.5rem;
+    text-align: center;
+    color: var(--text-color);
+    margin: 4rem 0;
+}
+.contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer{
+    background-color: var(--bg-color-bis);
+    padding: 50px 0;
+}
+.footer .social-icons{
+    text-align: center;
+}
+.footer ul{
+    text-align: center;
+    font-size: 1.7rem;
+}
+.footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer ul li a{
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer .copyright{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+
+
+@media(max-width:1250px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.7);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: var(--text-color);
+    }
+    .navbar.active{
+        display: none;
+    }
+    .gradient-btn{
+        display: none;
+    }
+
+    .accueil{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .accueil-content{
+        align-items: center;
+        text-align: center;
+
+    }
+    .accueil-content h1{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    text-align: center;
+    }
+    .accueil-content h3{
+        margin: 1.2rem 0;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .accueil-img img{
+        width: 50vw;
+    }
+
+    .apropos{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .apropos-ligne{
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    .apropos-ligne p{
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+
+
+    .projet-boite{
+        height: 600px;
+        width: 400px;
+        padding: 1rem;
+    }
+    .projet-boite img{
+        width: 380px;
+    }
+    .projet-boite h4{
+        font-size: 2.5rem;
+    }
+    .projet-boite p{
+        font-size: 1.8rem;
+    }
+    .projets-btn-group a{
+        font-size: 3rem;
+    }
+
+    .contact form{
+        flex-direction: column;
+    }
+    .contact form .input-box input, .contact form textarea{
+        font-size: 2rem;
+    }
+
+    .footer ul{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .footer ul li{
+        display: block;
+        margin: 10px 0;
+    }
+}

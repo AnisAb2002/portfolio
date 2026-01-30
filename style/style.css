@@ -486,7 +486,7 @@ section{
         font-size: 3rem;
     }
 
-    .contact social-icons{
+    .contact .social-icons{
         flex-direction: column;
     }
 
@@ -500,4 +500,5 @@ section{
     }
 
 }
+
 

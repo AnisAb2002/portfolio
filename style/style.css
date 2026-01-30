@@ -357,24 +357,13 @@ section{
     color: var(--text-color);
     margin: 4rem 0;
 }
-.contact form{
+.contact .social-icons{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     margin: 3rem 0;
     text-align: center;
-}
-.contact form .input-box input, .contact form textarea{
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.7rem;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    margin: 1rem 0;
-    resize: none;
 }
 
 .footer{
@@ -497,11 +486,8 @@ section{
         font-size: 3rem;
     }
 
-    .contact form{
+    .contact social-icons{
         flex-direction: column;
-    }
-    .contact form .input-box input, .contact form textarea{
-        font-size: 2rem;
     }
 
     .footer ul{
@@ -512,4 +498,5 @@ section{
         display: block;
         margin: 10px 0;
     }
+
 }

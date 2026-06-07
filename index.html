@@ -3,608 +3,728 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Anis Abdat — Développeur Full Stack & IA</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
 </head>
 <body>
-    <header class="header">
+
+    <!-- HEADER -->
+    <header class="header" id="header">
         <a href="#accueil" class="logo">
-            Anis <span>Abdat</span>
+            <span class="logo-bracket">[</span>AA<span class="logo-bracket">]</span>
         </a>
-        <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#accueil">Accueil</a>
-            <a href="#apropos">À propos</a>
-            <a href="#competences">Compétences</a>
-            <a href="#projets">Projets</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="#accueil" class="nav-link">Accueil</a>
+            <a href="#apropos" class="nav-link">À propos</a>
+            <a href="#competences" class="nav-link">Compétences</a>
+            <a href="#projets" class="nav-link">Projets</a>
+            <a href="#contact" class="nav-link nav-cta">Contact</a>
         </nav>
-
-        <a href="#contact" class="gradient-btn">Contactez-moi</a>
     </header>
 
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
 
-    <section class="accueil" id="accueil">
-        <div class="accueil-content">
-            <h1>Bonjour, je m'appelle <span>Anis</span></h1>
-            <h3>Étudiant en informatique | Développeur informatique en formation</h3>
-            
-            <div class="social-icons">
-                <a href="https://github.com/AnisAb2002" target="_blank">
-                    <i class="bx bxl-github"></i>
-                </a>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Disponible pour alternance — Master 24 mois
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Anis</span>
+                <span class="title-line accent">Abdat</span>
+            </h1>
+            <p class="hero-subtitle">Développeur Full Stack &amp; IA</p>
+            <p class="hero-desc">
+                Étudiant en Licence Informatique (ISEI) à Paris 8 — passionné par la création 
+                de solutions numériques performantes, du web au machine learning.
+            </p>
 
-                <a href="https://www.linkedin.com/in/anis-abdat/" target="_blank">
-                    <i class="bx bxl-linkedin-square"></i>
+            <div class="hero-actions">
+                <a href="#projets" class="btn-primary">
+                    <i class="ri-code-box-line"></i> Voir mes projets
                 </a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
             </div>
 
-            <div class="btn-group">
-                <a href="#projets" class="btn">Projets</a>
-                <a href="#contact" class="btn">Contact</a>
+            <div class="hero-socials">
+                <a href="https://github.com/AnisAb2002" target="_blank" aria-label="GitHub">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anis-abdat/" target="_blank" aria-label="LinkedIn">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="mailto:abdatanis2002@gmail.com" aria-label="Email">
+                    <i class="ri-mail-line"></i>
+                </a>
             </div>
         </div>
 
-        <div class="accueil-img">
-            <img src="img/ma-photo.jpg" alt="photo de Anis">
+        <div class="hero-visual">
+            <div class="photo-wrapper">
+                <img src="img/ma-photo.jpg" alt="Anis Abdat" class="hero-photo">
+                <div class="photo-ring"></div>
+                <div class="photo-ring ring-2"></div>
+            </div>
+            <div class="terminal-card">
+                <div class="terminal-bar">
+                    <span class="t-dot red"></span>
+                    <span class="t-dot yellow"></span>
+                    <span class="t-dot green"></span>
+                    <span class="t-title">anis@dev ~</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="t-prompt">$</span> whoami</p>
+                    <p class="t-out">Développeur Full Stack & IA</p>
+                    <p><span class="t-prompt">$</span> stack --list</p>
+                    <p class="t-out">React · Next.js · Django · Python</p>
+                    <p><span class="t-prompt">$</span> status</p>
+                    <p class="t-out"><span class="t-green">●</span> Open to opportunities<span class="cursor">_</span></p>
+                </div>
+            </div>
         </div>
     </section>
 
-
+    <!-- À PROPOS -->
     <section id="apropos" class="apropos">
+        <div class="section-header">
+            <span class="section-tag">01 — À propos</span>
+            <h2>Qui suis-<span class="accent">je</span> ?</h2>
+        </div>
 
-        <div class="apropos-content">
-            <h2>À propos de <span>Anis</span></h2>
-            <div class="apropos-ligne">
-                <img src="img/education.png" alt="">
-                <p>
-                    Étudiant en Licence 3 Informatique, parcours Informatiques des Systèmes Embarqués et Interactifs (ISEI) 
-                    à l'Université Paris 8. Je suis passionné par le développement web et 
-                    mobile, un domaine dans lequel je souhaite me spécialiser.
+        <div class="apropos-grid">
+            <div class="apropos-text">
+                <p class="apropos-intro">
+                    Étudiant en <strong>Licence 3 Informatique</strong>, spécialité Systèmes Embarqués et Interactifs 
+                    à l'Université Paris 8 — également en stage développeur <strong>React &amp; Django</strong> à l'UFR Psychologie de Paris 8 
+                    et freelance développeur numérique depuis 2023.
                 </p>
+                <p>
+                    Je suis passionné par tout ce qui touche au développement web, mobile et à l'intelligence artificielle. 
+                    Mon objectif : contribuer à des projets concrets et innovants en alternance, 
+                    tout en approfondissant mes compétences en <strong>Data Science et IA</strong>.
+                </p>
+                <p>
+                    Rigoureux, curieux et autonome, je comprends rapidement la logique des systèmes complexes 
+                    et je m'investis pleinement dans chaque projet. En dehors du code, le sport, la lecture 
+                    et les jeux vidéo (dont Unity 3D) nourrissent ma créativité.
+                </p>
+
+                <div class="lang-pills">
+                    <div class="lang-pill">
+                        <i class="ri-translate-2"></i>
+                        <span>Français</span>
+                        <span class="lang-level">C2</span>
+                    </div>
+                    <div class="lang-pill">
+                        <i class="ri-translate-2"></i>
+                        <span>Anglais</span>
+                        <span class="lang-level">Technique</span>
+                    </div>
+                    <div class="lang-pill">
+                        <i class="ri-translate-2"></i>
+                        <span>Allemand</span>
+                        <span class="lang-level">En cours</span>
+                    </div>
+                </div>
             </div>
-            <div class="apropos-ligne">
-                <img src="img/medal.png" alt="">
-                <p>
-                    Rigoureux, engagé et fortement motivé, j'accorde une importance particulière à la qualité de mon travail 
-                    et à l'amélioration continue de mes compétences.
-                </p>
-            </div>
-            <div class="apropos-ligne">
-                <img src="img/code.png" alt="">
-                <p>
-                    Je suis conscient du rôle stratégique du web et du mobile dans notre société ; mon rêve est de contribuer 
-                    à la création de solutions numériques innovantes, utiles et performantes.
-                </p>
-            </div>
-            <div class="apropos-ligne">
-                <img src="img/langue.png" alt="">
-                <p>
-                    Sur le plan linguistique, je dispose d'un niveau C2 en français, attestant d'une maîtrise avancée de la 
-                    langue. j'ai également un niveau technique en anglais, et j'en suis aux premiers stades de l'apprentissage 
-                    de l'allemand, que je poursuis avec motivation. 
-                </p>
-            </div>
-            <div class="apropos-ligne">
-                <img src="img/cube.png" alt="">
-                <p>
-                    Mon intérêt pour les jeux vidéo m'a conduit à explorer le développement 3D et interactif, notamment à 
-                    travers Unity, en suivant la formation officielle Unity Learn.
-                </p>
-            </div>
-            <div class="apropos-ligne">
-                <img src="img/up.png" alt="">
-                <p>
-                    En parallèle, je cultive un fort attachement au sport et à la lecture, ces deux disciplines m'accompagnent 
-                    dans ma démarche de développement personnel.
-                </p>
+
+            <div class="apropos-cards">
+                <div class="info-card">
+                    <i class="ri-graduation-cap-line"></i>
+                    <div>
+                        <h4>Formation</h4>
+                        <p>Licence 3 Informatique ISEI — Université Paris 8</p>
+                        <p class="small">→ Candidature Master en cours</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="ri-briefcase-4-line"></i>
+                    <div>
+                        <h4>Expérience</h4>
+                        <p>Stage React/Django — UFR Psychologie Paris 8</p>
+                        <p class="small">Freelance développeur depuis 2023</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="ri-map-pin-line"></i>
+                    <div>
+                        <h4>Localisation</h4>
+                        <p>Île-de-France</p>
+                        <p class="small">Mobilité nationale</p>
+                    </div>
+                </div>
+                <div class="info-card highlight-card">
+                    <i class="ri-search-eye-line"></i>
+                    <div>
+                        <h4>Recherche</h4>
+                        <p>Alternance Master 24 mois</p>
+                        <p class="small">IA · Data · Développement Web</p>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </section>
 
-
+    <!-- COMPÉTENCES -->
     <section class="competences" id="competences">
-        <h2>Compétences</h2>
+        <div class="section-header">
+            <span class="section-tag">02 — Compétences</span>
+            <h2>Mon <span class="accent">stack</span></h2>
+        </div>
 
-        <div class="competences-contenaire">
-            <div class="competence-boite">
-                <div class="comptence-info">
-                    <i class="bx bx-terminal"></i>
-                    <h4>Programmation</h4>
-                    <ul>
-                        <li>C</li>
-                        <li>C#</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </ul>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <i class="ri-global-line"></i>
+                    <h3>Front-end</h3>
                 </div>
-            </div>
-
-            <div class="competence-boite">
-                <div class="comptence-info">
-                    <i class="bx bx-code-alt"></i>
-                    <h4>Dev Web</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap/Tailwind</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>TypeScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                    </ul>
+                <div class="skill-tags">
+                    <span class="tag tag-hot">React.js</span>
+                    <span class="tag tag-hot">Next.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">JavaScript ES6+</span>
+                    <span class="tag">TailwindCSS</span>
+                    <span class="tag">HTML5 / CSS3</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Bootstrap</span>
                 </div>
             </div>
 
-            <div class="competence-boite">
-                <div class="comptence-info">
-                    <i class="bx bx-mobile-alt"></i>
-                    <h4>Application mobile</h4>
-                    <ul>
-                        <li>Kotlin</li>
-                        <li>XML</li>
-                        <li>Android Studio</li>
-                        <li>Swift</li>
-                        <li>Flutter</li>
-                        <li>Firebase</li>
-                    </ul>
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <i class="ri-server-line"></i>
+                    <h3>Back-end</h3>
                 </div>
-            </div>
-                
-            <div class="competence-boite">
-                <div class="comptence-info">
-                    <i class="bx bx-server"></i>
-                    <h4>Base de données</h4>
-                    <ul>
-                        <li>SQL</li>
-                        <li>NoSQL</li>
-                        <li>Merise</li>
-                        <li>Xampp</li>
-                        <li>WampServer</li>
-                    </ul>
-                </div>
-            </div>
-                
-            <div class="competence-boite">
-                <div class="comptence-info">
-                    <i class="bx bx-bracket"></i>
-                    <h4>Bibliothèques Python</h4>
-                    <ul>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>Matplotlib</li>
-                        <li>Sklearn</li>
-                        <li>Tkinter</li>
-                        <li>TensorFlow</li>
-                        <li>OpenCV</li>
-                    </ul>
+                <div class="skill-tags">
+                    <span class="tag tag-hot">Django / DRF</span>
+                    <span class="tag tag-hot">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">API REST</span>
+                    <span class="tag">JWT / OAuth2</span>
                 </div>
             </div>
 
-            <div class="competence-boite">
-                <div class="comptence-info">
-                    <i class="bx bx-git-merge"></i>
-                    <h4>Autres</h4>
-                    <ul>
-                        <li>VS Code</li>
-                        <li>Git / GitHub</li>
-                        <li>Cisco Packet Tracer</li>
-                        <li>Unity</li>
-                        <li>Blender</li>
-                        <li>Linux</li>
-                        <li>UML</li>
-                    </ul>
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <i class="ri-robot-2-line"></i>
+                    <h3>IA & Data Science</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag tag-hot">Python</span>
+                    <span class="tag tag-hot">TensorFlow</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Pandas / NumPy</span>
+                    <span class="tag">Matplotlib / Plotly</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">API LLM (Mistral / OpenAI)</span>
+                    <span class="tag">Agents IA</span>
+                    <span class="tag">Streamlit / Dash</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <i class="ri-smartphone-line"></i>
+                    <h3>Mobile</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag tag-hot">Flutter</span>
+                    <span class="tag tag-hot">Kotlin</span>
+                    <span class="tag">Android Studio</span>
+                    <span class="tag">Swift</span>
+                    <span class="tag">Firebase</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <i class="ri-database-2-line"></i>
+                    <h3>Bases de données</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag tag-hot">MySQL / PostgreSQL</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">Firebase / Firestore</span>
+                    <span class="tag">NoSQL</span>
+                    <span class="tag">Merise / MCD</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header">
+                    <i class="ri-tools-line"></i>
+                    <h3>Outils & Autres</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag tag-hot">Git / GitHub</span>
+                    <span class="tag">Docker (notions)</span>
+                    <span class="tag">Vercel / Netlify</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Unity / Blender</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">UML</span>
+                    <span class="tag">Méthode Agile</span>
                 </div>
             </div>
 
         </div>
+
+        <div class="learning-bar">
+            <span class="learning-label"><i class="ri-loader-4-line spin"></i> En cours d'apprentissage</span>
+            <div class="learning-items">
+                <span>Power BI avancé</span>
+                <span>SQL analytique (fenêtres)</span>
+                <span>Docker</span>
+            </div>
+        </div>
     </section>
 
+    <!-- PROJETS -->
     <section class="projets" id="projets">
-        <h2>Projets</h2>
+        <div class="section-header">
+            <span class="section-tag">03 — Projets</span>
+            <h2>Ce que j'ai <span class="accent">construit</span></h2>
+        </div>
 
-        <div class="projets-contenaire">
+        <div class="projets-grid">
 
-            <div class="projet-boite">
-                <img src="img/protx-app.png" alt="photo projet protx-app">
-
-                <h4>ProtX - Application mobile</h4>
-                <p>ProtX est une application mobile (Android) de vente de compléments alimentaires pour athlètes, 
-                    permettant aux utilisateurs de parcourir des produits sportifs, les ajouter au panier, passer 
-                    des commandes et gérer leur profil. Le projet utilise Firebase Firestore comme base de 
-                    données ainsi que Room pour la gestion locale du panier.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/protx_v2_app_mobile" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+            <div class="projet-card featured">
+                <div class="projet-img-wrap">
+                    <img src="img/protx-site.png" alt="ProtX Web">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/protx" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                            <a href="https://anisab2002.github.io/protx_v1/index.html" target="_blank"><i class="ri-external-link-line"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Web App</span>
+                        <span class="projet-year">2025</span>
+                    </div>
+                    <h3>ProtX — E-commerce sportif</h3>
+                    <p>Projet de fin de licence. Application de vente de compléments alimentaires complète, développée en HTML, CSS, JavaScript et PHP avec base de données MySQL.</p>
+                    <div class="projet-stack">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/protx-site.png" alt="photo projet protx">
-
-                <h4>Protx - Application Web</h4>
-                <p>Site web de vente de compléments alimentaires pour athlètes conçu dans le cadre d'un 
-                    projet de fin d'étude pour ma licence Informatique en 2025. Codé en HTML, CSS, 
-                    JavaScript et PHP. Le lien vers le dépot git du projet est la version finale et 
-                    fonctionnelle, le deuxième lien sert uniquement à montrer la front-end du site.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/protx" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://anisab2002.github.io/protx_v1/index.html" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
+            <div class="projet-card featured">
+                <div class="projet-img-wrap">
+                    <img src="img/pecunia.jpg" alt="Pecunia">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/pecunia" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                            <a href="https://pecunia-uj9j.vercel.app/" target="_blank"><i class="ri-external-link-line"></i> Démo</a>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
-
-            <div class="projet-boite">
-                <img src="img/mady.jpg" alt="photo projet Mady IA">
-
-                <h4>Mady IA</h4>
-                <p>Mady.IA est un outil no-code pour aider les “vibe coders” à concevoir, tester
-                    et améliorer des agents IA. Il génère des scénarios de test, évalue les 
-                    réponses via des critères adaptés et propose des recommandations pour rendre 
-                    les agents plus robustes et observables.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/Mady-IA" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                </div>
-                
-            </div>
-
-            <div class="projet-boite">
-                <img src="img/deepage.jpg" alt="photo projet DeepAge">
-
-                <h4>DeepAge - Analyse intelligente du visage</h4>
-                <p>DeepAge est une application Python utilisant une interface graphique interactive 
-                    Tkinter et TensorFlow pour prédire l’âge, le genre et l’émotion d’une personne 
-                    en temps réel à partir de la caméra. Elle détecte les visages avec OpenCV, 
-                    prétraite les images et prédit l’âge, le genre et l'émotion grâce à des
-                    modèles CNN entraîné sur des datasets d’images.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/DeepAge" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Full Stack</span>
+                        <span class="projet-year">2025</span>
+                    </div>
+                    <h3>Pecunia — Gestion de budget</h3>
+                    <p>Application web moderne de gestion budgétaire personnelle avec architecture Next.js + Django REST Framework. CRUD complet, interface intuitive, déployé sur Vercel.</p>
+                    <div class="projet-stack">
+                        <span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>Vercel</span>
+                    </div>
                 </div>
             </div>
 
-            
-            <div class="projet-boite">
-                <img src="img/kartbot.jpg" alt="photo projet kartbot">
-
-                <h4>Kartbot</h4>
-                <p>Projet complet de pilotage d’un robot GoPiGo3 basé sur Raspberry Pi 3, 
-                    contrôlé via une application mobile Android (Kotlin). Ce site web permet 
-                    l’inscription, la connexion des utilisateurs, la visualisation des 
-                    statistiques de courses et l’exploration du circuit en 3D avec suivi des 
-                    performances.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/kartbot_web" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://anisab2002.github.io/kartbot_web/" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/mady.jpg" alt="Mady IA">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/Mady-IA" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
-
-            <div class="projet-boite">
-                <img src="img/pecunia.jpg" alt="photo projet pecunia">
-
-                <h4>Pecunia</h4>
-                <p>Pecunia est une application web pour gérer le budget personnel, elle permet de 
-                    suivre les dépenses et les revenus. Avec une architecture moderne de Next.js 
-                    pour le frontend et Django REST Framework pour le backend et permet les opérations 
-                    CRUD sur les transactions et avec une interface moderne et intuitif.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/pecunia" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://pecunia-uj9j.vercel.app/" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
-                </div>
-                
-            </div>
-
-            
-            <div class="projet-boite">
-                <img src="img/protx-swift.png" alt="photo projet Protx swift">
-
-                <h4>Protx Training</h4>
-                <p>ProtX Training est une application web de suivi de musculation développée 
-                    en Swift avec le framework Hummingbird. Elle permet aux utilisateurs de 
-                    planifier des séances, de suivre leur progression via un système d'XP 
-                    et de visualiser leurs exercices via des démonstrations animées.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/protx_training" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                </div>
-                
-            </div>
-
-            <div class="projet-boite">
-                <img src="img/libri-app.png" alt="photo projet libri">
-
-                <h4>Libri - Application mobile</h4>
-                <p>Libri est une application développé avec Flutter permettant de gérer la lecture. On peut 
-                    ajouter les livres lus ou en wishlist, les noter, ajouter des descriptions, supprimer 
-                    les livres et synchroniser les données avec Firebase en toute sécurité.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/libri" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">IA / No-code</span>
+                    </div>
+                    <h3>Mady IA</h3>
+                    <p>Outil no-code pour tester et améliorer des agents IA. Génération de scénarios, évaluation de réponses et recommandations de robustesse via API Mistral.</p>
+                    <div class="projet-stack">
+                        <span>Python</span><span>Streamlit</span><span>Mistral API</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/loqui.png" alt="photo projet loqui">
-
-                <h4>Loqui</h4>
-                <p>Une application web de messagerie en HTML, CSS et PHP. Elle inclut l'inscription, la connexion, 
-                    un chat général, des messages privés, l'envoi de fichiers et la gestion d'une base de données. 
-                    Ce projet universitaire vise à concevoir une plateforme de communication simple en consultant 
-                    une base de données MySQL avec PHP.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/Loqui" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/deepage.jpg" alt="DeepAge">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/DeepAge" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
-
-
-            <div class="projet-boite">
-                <img src="img/todo-app.png" alt="photo projet todo-app">
-
-                <h4>To Do - Application mobile</h4>
-                <p>Projet qui a pour but l'apprentissage du développement mobile avec Kotlin et Android Studio.
-                    C'est une application To-Do List simple permettant d'ajouter, afficher et gérer des tâches. 
-                    Réalisée pour explorer ViewBinding, RecyclerView et Room
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/To-Do-App-Mobile" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">IA / Computer Vision</span>
+                    </div>
+                    <h3>DeepAge</h3>
+                    <p>Application Python de prédiction temps réel de l'âge, du genre et de l'émotion via webcam. Modèles CNN entraînés, détection OpenCV.</p>
+                    <div class="projet-stack">
+                        <span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>Tkinter</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/tache-a-faire.png" alt="photo projet tache-a-faire">
-
-                <h4>Tache à faire - Application Web</h4>
-                <p>Ce projet est une application web simple de gestion de tâches (to-di list), 
-                    c'est pour apprendre les bases de la création d'interfaces web dynamiques 
-                    avec HTML, CSS et JavaScript. Elle permet d'ajouter, cocher, modifier ou 
-                    supprimer des tâches, tout en affichant la progression.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/taches_a_faire" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://anisab2002.github.io/taches_a_faire/" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/protx-app.png" alt="ProtX App">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/protx_v2_app_mobile" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="projet-boite">
-                <img src="img/chrono.png" alt="photo projet chrono">
-
-                <h4>Chrono - Application Web</h4>
-                <p>Ce projet est réalisé dans un cadre d'apprentissage, il met en pratique la manipulation 
-                    du DOM, la gestion des événements et l'application de styles dynamiques. C'est un 
-                    chronomètre interactif en JavaScript permettant de démarrer, arrêter et réinitialiser 
-                    le temps tout en affichant les heures, minutes, secondes et millisecondes. 
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/chrono" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://anisab2002.github.io/chrono/" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Mobile Android</span>
+                    </div>
+                    <h3>ProtX — Application mobile</h3>
+                    <p>App Android de vente de compléments alimentaires. Panier, commandes, profil utilisateur. Firebase Firestore + Room pour la persistance locale.</p>
+                    <div class="projet-stack">
+                        <span>Kotlin</span><span>Android Studio</span><span>Firebase</span><span>Room</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/pacman.png" alt="photo projet pacman">
-
-                <h4>Pac Man - Application Web</h4>
-                <p>Ce projet consiste à recréer le jeu classique Pac-Man en JavaScript afin de se 
-                    familiariser avec la manipulation du canvas, la gestion des événements clavier 
-                    et la logique de déplacement des personnages. Il permet d'apprendre à structurer 
-                    un code de jeu simple tout en intégrant graphismes, collisions et comportements aléatoires.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/le_bon_vieux_pacman" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://anisab2002.github.io/le_bon_vieux_pacman/" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/kartbot.jpg" alt="KartBot">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/kartbot_web" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                            <a href="https://anisab2002.github.io/kartbot_web/" target="_blank"><i class="ri-external-link-line"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">IoT / Web</span>
+                    </div>
+                    <h3>Kartbot</h3>
+                    <p>Robot GoPiGo3 sur Raspberry Pi 3, piloté via app Android. Site web de visualisation des stats de course et circuit 3D interactif.</p>
+                    <div class="projet-stack">
+                        <span>Kotlin</span><span>Raspberry Pi</span><span>Three.js</span><span>PHP</span>
+                    </div>
                 </div>
             </div>
 
-            
-
-            <div class="projet-boite">
-                <img src="img/gestion-stock.jpg" alt="photo projet gestion-stock">
-
-                <h4>Gestion de Stock - Logiciel</h4>
-                <p>Logiciel de gestion de stock en Python avec Tkinter, MySQL, NumPy : 
-                    ajout, suppression, mise à jour et recherche de produits, sauvegarde 
-                    en base de données et export des données vers Excel. Interface 
-                    intuitive pour la gestion et le suivi des stocks.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/Gestion-de-Stock" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/covid19.jpg" alt="Dashboard COVID-19">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/covid19-dashboard" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Data Viz</span>
+                    </div>
+                    <h3>Dashboard COVID-19</h3>
+                    <p>Dashboard interactif de visualisation des données OMS. KPI, cartes choroplèthes, graphiques temporels et filtres dynamiques.</p>
+                    <div class="projet-stack">
+                        <span>Python</span><span>Dash</span><span>Plotly</span><span>Pandas</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/suivi-medical.png" alt="photo projet suivi-medical">
-
-                <h4>Suivi médical - Logiciel</h4>
-                <p>Dans le cadre d'un projet universitaire, nous avons développé ce logiciel de 
-                    bureau en Python, destiné à aider un médecin dans son cabinet à gérer le 
-                    suivi des consultations médicales de ses patients. Ce logiciel a été conçu 
-                    en utilisant la bibliothèque Tkinter et repose sur le modèle d'architecture
-                    MVC (Modèle - Vue - Contrôleur).
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/suivi_medical" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/libri-app.png" alt="Libri">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/libri" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Mobile</span>
+                    </div>
+                    <h3>Libri — Suivi de lectures</h3>
+                    <p>Application Flutter de gestion de bibliothèque personnelle. Ajout, notation, wishlist et synchronisation Firebase sécurisée.</p>
+                    <div class="projet-stack">
+                        <span>Flutter</span><span>Dart</span><span>Firebase</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/iris.jpg" alt="photo projet iris">
-
-                <h4>Iris - Modèle de classification avec Python</h4>
-                <p>Dans le cadre d'un projet universitaire avec Python, j'ai importé un 
-                    dataset Iris, pré-traité et analysé les données, visualisé avec des 
-                    graphiques, implémenté l'algorithme de classification K-Nearest 
-                    Neighbors (KNN) pour l'apprentissage et l'évalué le modèle.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/iris_classification" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/protx-swift.png" alt="ProtX Training">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/protx_training" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Web / Swift</span>
+                    </div>
+                    <h3>ProtX Training</h3>
+                    <p>Application de suivi de musculation en Swift avec Hummingbird. Planification de séances, système d'XP et démonstrations d'exercices animées.</p>
+                    <div class="projet-stack">
+                        <span>Swift</span><span>Hummingbird</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/smart-canne.png" alt="photo projet smart canne">
-
-                <h4>Smart Canne - Application Web</h4>
-                <p>Ce projet est une application web que j'ai développé (HTML et CSS) pour une startup 
-                    que nous avons créée dans le cadre d'un projet universitaire.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/smart_canne" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="https://anisab2002.github.io/smart_canne/" target="_blank">
-                        <i class="bx bx-window"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/iris.jpg" alt="IRIS">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/iris_classification" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Machine Learning</span>
+                    </div>
+                    <h3>IRIS — Classification KNN</h3>
+                    <p>Modèle de classification du dataset Iris avec algorithme K-Nearest Neighbors, prétraitement, analyse exploratoire et visualisation des performances.</p>
+                    <div class="projet-stack">
+                        <span>Python</span><span>Scikit-learn</span><span>Matplotlib</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="projet-boite">
-                <img src="img/diagramme.png" alt="photo projet uml protx">
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/gestion-stock.jpg" alt="Gestion de Stock">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/Gestion-de-Stock" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Logiciel Desktop</span>
+                    </div>
+                    <h3>Gestion de Stock</h3>
+                    <p>Logiciel bureau Python avec interface Tkinter. CRUD produits, base MySQL, sauvegarde et export Excel. Interface intuitive pour suivi de stock.</p>
+                    <div class="projet-stack">
+                        <span>Python</span><span>Tkinter</span><span>MySQL</span><span>NumPy</span>
+                    </div>
+                </div>
+            </div>
 
-                <h4>Modélisation UML - Protx</h4>
-                <p>Modélisation complète du système du site web Protx avec UML avant l'implémentation. 
-                    Contient les diagrammes de classe, cas d'utilisation, contexte, activité, séquence, 
-                    composants et déploiement pour décrire l'architecture et les interactions du système.
-                </p>
-                <div class="projets-btn-group">
-                    <a href="https://github.com/AnisAb2002/uml-protx" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/loqui.png" alt="Loqui">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/Loqui" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Web App</span>
+                    </div>
+                    <h3>Loqui — Messagerie</h3>
+                    <p>Plateforme de messagerie web complète : inscription, connexion, chat général et privé, envoi de fichiers, base de données MySQL via PHP.</p>
+                    <div class="projet-stack">
+                        <span>HTML/CSS</span><span>PHP</span><span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/suivi-medical.png" alt="Suivi médical">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/suivi_medical" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Logiciel Desktop</span>
+                    </div>
+                    <h3>Suivi Médical</h3>
+                    <p>Logiciel de gestion de consultations médicales en Python, architecture MVC. Conçu pour aider un médecin à gérer le suivi de ses patients.</p>
+                    <div class="projet-stack">
+                        <span>Python</span><span>Tkinter</span><span>MVC</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/diagramme.png" alt="UML ProtX">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/uml-protx" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Architecture</span>
+                    </div>
+                    <h3>Modélisation UML — ProtX</h3>
+                    <p>Modélisation complète du système ProtX avant implémentation : diagrammes de classe, cas d'usage, séquence, activité, composants et déploiement.</p>
+                    <div class="projet-stack">
+                        <span>UML</span><span>Merise</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/pacman.png" alt="Pac Man">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/le_bon_vieux_pacman" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                            <a href="https://anisab2002.github.io/le_bon_vieux_pacman/" target="_blank"><i class="ri-external-link-line"></i> Jouer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Jeu Web</span>
+                    </div>
+                    <h3>Pac-Man JavaScript</h3>
+                    <p>Recréation du jeu classique Pac-Man en JavaScript. Canvas, gestion clavier, collisions, logique de déplacement et comportements aléatoires des fantômes.</p>
+                    <div class="projet-stack">
+                        <span>JavaScript</span><span>Canvas API</span><span>HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-card">
+                <div class="projet-img-wrap">
+                    <img src="img/smart-canne.png" alt="Smart Canne">
+                    <div class="projet-overlay">
+                        <div class="projet-links">
+                            <a href="https://github.com/AnisAb2002/smart_canne" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                            <a href="https://anisab2002.github.io/smart_canne/" target="_blank"><i class="ri-external-link-line"></i> Démo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <span class="projet-type">Web / Startup</span>
+                    </div>
+                    <h3>Smart Canne</h3>
+                    <p>Site vitrine pour une startup universitaire développant une canne intelligente. Présentation produit responsive en HTML et CSS.</p>
+                    <div class="projet-stack">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
-        <h2>Contact</h2>
+        <div class="contact-inner">
+            <div class="section-header">
+                <span class="section-tag">04 — Contact</span>
+                <h2>Travaillons <span class="accent">ensemble</span></h2>
+            </div>
 
-            <div class="social-icons">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdatanis2002@gmail.com"  target="_blank">
-                    <i class="bx bx-envelope"></i>
+            <p class="contact-desc">
+                Je suis activement à la recherche d'une alternance Master (24 mois) 
+                en IA, Data ou Développement Informatique à partir de septembre 2026.
+                N'hésitez pas à me contacter.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:abdatanis2002@gmail.com" class="contact-link">
+                    <div class="contact-link-icon"><i class="ri-mail-send-line"></i></div>
+                    <div class="contact-link-text">
+                        <span class="contact-link-label">Email</span>
+                        <span class="contact-link-val">abdatanis2002@gmail.com</span>
+                    </div>
+                    <i class="ri-arrow-right-up-line contact-link-arrow"></i>
                 </a>
-                <a href="https://wa.me/0033760904274" target="_blank">
-                    <i class="bx bxl-whatsapp"></i>
+
+                <a href="https://www.linkedin.com/in/anis-abdat/" target="_blank" class="contact-link">
+                    <div class="contact-link-icon"><i class="ri-linkedin-fill"></i></div>
+                    <div class="contact-link-text">
+                        <span class="contact-link-label">LinkedIn</span>
+                        <span class="contact-link-val">anis-abdat</span>
+                    </div>
+                    <i class="ri-arrow-right-up-line contact-link-arrow"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/anis-abdat/" target="_blank">
-                    <i class="bx bxl-linkedin-square"></i>
+
+                <a href="https://github.com/AnisAb2002" target="_blank" class="contact-link">
+                    <div class="contact-link-icon"><i class="ri-github-fill"></i></div>
+                    <div class="contact-link-text">
+                        <span class="contact-link-label">GitHub</span>
+                        <span class="contact-link-val">AnisAb2002</span>
+                    </div>
+                    <i class="ri-arrow-right-up-line contact-link-arrow"></i>
                 </a>
-                
-                <a href="./img/CV.pdf" download target="_blank">
-                    <i class="bx bx-file"></i>
+
+                <a href="https://wa.me/0033760904274" target="_blank" class="contact-link">
+                    <div class="contact-link-icon"><i class="ri-whatsapp-line"></i></div>
+                    <div class="contact-link-text">
+                        <span class="contact-link-label">WhatsApp</span>
+                        <span class="contact-link-val">+33 7 60 90 42 74</span>
+                    </div>
+                    <i class="ri-arrow-right-up-line contact-link-arrow"></i>
                 </a>
             </div>
-        
-    </section>
 
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="https://github.com/AnisAb2002" target="_blank">
-                <i class="bx bxl-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/anis-abdat/" target="_blank">
-                <i class="bx bxl-linkedin-square"></i>
+            <a href="./img/CV.pdf" download class="btn-primary btn-dl">
+                <i class="ri-download-2-line"></i> Télécharger mon CV
             </a>
         </div>
+    </section>
 
-        <ul>
-            <li>
-                <a href="#apropos">À propos</a>
-            </li>
-            <li>
-                <a href="#competences">Compétences</a>
-            </li>
-            <li>
-                <a href="#projets">Projets</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <p class="copyright">© Anis Abdat</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-logo"><span class="logo-bracket">[</span>AA<span class="logo-bracket">]</span></span>
+            <ul class="footer-nav">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="footer-copy">© 2025 Anis Abdat. Tous droits réservés.</p>
+        </div>
     </footer>
-    <script src="scripts/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
